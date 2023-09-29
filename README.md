@@ -31,8 +31,8 @@ Data Cleaning:
 
 Data Exploration:
 
-*Using box plots to show the spread of our data based on rating, review count and price. Some outliers can be explained by the large number of chain restuarants.
-*Bar graphs we used to show the comparison between west and east coast preferences.
+* Using box plots to show the spread of our data based on rating, review count and price. Some outliers can be explained by the large number of chain restuarants.
+* Bar graphs we used to show the comparison between west and east coast preferences.
 
 Supervised Learning Models:
 
