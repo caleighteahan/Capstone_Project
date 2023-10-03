@@ -45,6 +45,8 @@ In this project, we analyzed restaurant data from across the United States to tr
 * Using box plots to show the spread of our data based on rating, review count and price. Some outliers can be explained by the large number of chain restuarants.
 * Bar graphs we used to show the comparison between west and east coast preferences.
 
+Tableau Dashboard link:  [Link](https://public.tableau.com/app/profile/nilusha.dg/viz/Project4_16955975765120/DashboardP4?publish=yes)
+
 ## Supervised Learning Models:
 
 We used two different types of supervised learning models to predict a restaurant’s rating  based off our data
@@ -77,8 +79,6 @@ We used the hyperbolic tangent (tanh) function as the activation function for th
 Model Training:
 * We trained the neural network on the preprocessed and oversampled data.
 * The model achieved an accuracy of 68% on the test data, indicating its performance on unseen data.
-
-Tableau Dashboard link:  [Link](https://public.tableau.com/app/profile/nilusha.dg/viz/Project4_16955975765120/DashboardP4?publish=yes)
 
 
 ## Copyright
