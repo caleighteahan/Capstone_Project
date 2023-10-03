@@ -55,10 +55,31 @@ Our project dived into the extensive analysis of restaurant data across the Unit
 
 Collecting data more with a greater data context (restaurant attributes, etc.) to improve our machine learning model accuracy would have been a nice improvement.
 
-Tableau Dashboard link:  https://public.tableau.com/app/profile/nilusha.dg/viz/Project4_16955975765120/DashboardP4?publish=yes
+## Neural Network Models:
 
+Data Preprocessing:
+* We began by examining the correlation between variables to identify any misleading or irrelevant columns.
+* We retained only the columns that were highly correlated with our target variable.
+* We checked for data skewness and observed that there were 12,079 "True" instances and 11,294 "False" instances, indicating a relatively balanced dataset.
+      
+Oversampling with SMOTE:
+* To address the class imbalance, we employed the Synthetic Minority Over-sampling Technique (SMOTE) algorithm.
+* SMOTE generated synthetic samples for the minority class, helping balance the dataset.
+      
+Model Architecture:
+* We designed a neural network with three hidden layers:
+* The first hidden layer had 400 nodes.
+* The second hidden layer had 150 nodes.
+* The third hidden layer had 5 nodes.
+        
+We used the hyperbolic tangent (tanh) function as the activation function for the hidden layers and the sigmoid function for the output layer.
+      
+Model Training:
+* We trained the neural network on the preprocessed and oversampled data.
+* The model achieved an accuracy of 68% on the test data, indicating its performance on unseen data.
 
-Description automatically generated
+Tableau Dashboard link:  [Link](https://public.tableau.com/app/profile/nilusha.dg/viz/Project4_16955975765120/DashboardP4?publish=yes)
+
 
 ## Copyright
 
