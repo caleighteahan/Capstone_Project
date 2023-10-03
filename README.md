@@ -1,9 +1,8 @@
 # Yelp Data Deeplearning Modeling
-## Which food do Americans prefer: Italian or Mexican food?
 
 ![](images/Screenshot.png)
 
-Project 4: 
+Contributors: 
 
 * Caleigh Teahan : <a href="https://github.com/caleighteahan"><img src="https://camo.githubusercontent.com/4133dc1cd4511d4a292b84ce10e52e4ed92569fb2a8165381c9c47be5edc2796/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f706e672f6769746875622e706e67" alt="GitHub Icon" height="30"></a>
 * Joe Demler : <a href="https://github.com/JDems"><img src="https://camo.githubusercontent.com/4133dc1cd4511d4a292b84ce10e52e4ed92569fb2a8165381c9c47be5edc2796/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f706e672f6769746875622e706e67" alt="GitHub Icon" height="30"></a>
@@ -13,17 +12,17 @@ Project 4:
 
 
 
-Introduction:
+## Introduction:
 
 In this project, we analyzed restaurant data from across the United States to try and draw conclusions on consumer trends, specifically their preference in cuisines. We later took this data and created machine learning models to attempt to predict consumer restaurant ratings. Bringing back the old question of, which do Americans perfer Italian or Mexican food?
 
-Methods We Used: 
+## Methods We Used: 
 
 * Data Preparation: We extracted data from the Yelp API under specified location parameters. Then, we converted, cleaned and dropped unnecessary columns to create a usable Pandas dataframe.
 * Data Visualization: Using Tableau and Mathplotlib, we created visualization to explain our data and to show
 * Machine learning Modeling: Using both supervised and neural network models to train our data to predict a restaurant's rating based on the parameters of price, location, cuisine and customer reviews.
 
-Extracting the Data:
+## Extracting the Data:
 
 * Objective: To collect restaurant data from Yelp’s API, perform analysis and create a model to predict restaurant rating.
 * Filters added to request: 
@@ -33,7 +32,7 @@ Extracting the Data:
 * Total = 19145 restaurants 
 * Columns = id, alias, name, image_url, is_closed, url, review_count, categories, rating, coordinates, transactions, price,location, phone, display_phone, distance, group_city
 
-Data Cleaning:
+## Data Cleaning:
 
 * Dropped columns('alias,' 'phone,' 'display_phone,' and 'distance') irrelevant to analysis
 * Creating a new column for cuisines, converting categories column from string to list of dictionaries and applying lambda function to extract cuisine titles. 
@@ -41,12 +40,12 @@ Data Cleaning:
 * Converted the 'price' column from symbols ('$' to '$$$$') to integers (1 to 4) for price related analysis
 * columns= id, name, image_url, is_closed, url, review_count, rating, transactions, price, group_city, cuisines, latitude, longitude, state
 
-Data Exploration:
+## Data Exploration:
 
 * Using box plots to show the spread of our data based on rating, review count and price. Some outliers can be explained by the large number of chain restuarants.
 * Bar graphs we used to show the comparison between west and east coast preferences.
 
-Supervised Learning Models:
+## Supervised Learning Models:
 
 We used two different types of supervised learning models to predict a restaurant’s rating  based off our data
 * Random Forest Regressor and Classifier: 63% accuracy and a root mean square of 0.48
